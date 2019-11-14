@@ -7,7 +7,7 @@ This is a project for Holberton School that simulates a shell as a program that 
 
 The simple shell, in our first version was buildied with functions that implement structures, system call and functions of libraries like example **<sys/types.h>  <sys/stat.h>** that together read commands for show the content the a directory and his files etc.
 
-## Program execution
+## Installation Guide
 
 Download the project in this address: 
 [https://github.com/cbayonao/simple_shell](https://github.com/cbayonao/simple_shell)

@@ -9,7 +9,7 @@ The simple shell, in our first version was buildied with functions that implemen
 
 ## Installation Guide
 
-Download the project in this address: 
+Download the project in this address:
 [https://github.com/cbayonao/simple_shell](https://github.com/cbayonao/simple_shell)
 
 ### Compilation
@@ -60,7 +60,7 @@ SmartyPants converts ASCII punctuation characters into "smart" typographic punct
 
 ### Authors
 ---
-Camilo Bayona Orduz 
+Camilo Bayona Orduz
 camilo.bayona@holbertonschool.com
 
 Juan Carlos Rengifo

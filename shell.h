@@ -6,19 +6,12 @@
 #include <signal.h>
 #include <sys/wait.h>
 #include <sys/stat.h>
+#include <sys/types.h>
 #include <fcntl.h>
 #include <string.h>
 
-typedef struct _node
-{
-	void *data;
-	struct _node *next;
-} Node;
-
-typedef struct _linkedList
-{
-	Node *head;
-	Node *tail;
-	Node *current;
-} LinkedList;
+void welcome_shell(void);
+char *create_buffer(void);
+int _printf(char *str);
+int _strleng(char *str);
 #endif /* SHELL_H */

@@ -18,7 +18,7 @@ void start_shell(void)
 		free(buffer);
 		exit(1);
 	}
-	check_arg(buffer);
+//	check_arg(buffer);
 	free(buffer);
 	start_shell();
 }

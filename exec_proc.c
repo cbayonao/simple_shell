@@ -7,14 +7,14 @@
 void exec_proc(char *arg)
 {
 	char *str[2];
-	int status, j;
+	int status;
 	pid_t id_pdi;
 
 	id_pdi = fork();
-	if (id_pid == -1)
+	if (id_pdi == -1)
 	{
 		perror("Error:");
-		return (1);
+		exit(1);
 	}
 	str[0] = arg;
 	str[1] = NULL;

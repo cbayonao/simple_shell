@@ -13,8 +13,7 @@ int main(int argc, char *argv[])
 	{
 	int j = 1;
 	for (int i = argc - 1; i > 0; i--, j++)
-	//	_printf(argv[j]);
-		split_str(argv[j]);
+		check_arg(argv[j]);
 	}
 	else
 		start_shell();

@@ -11,12 +11,16 @@ void exec_proc(char *arg)
 	pid_t id_pdi;
 
 	id_pdi = fork();
+	if (id_pid == -1)
+	{
+		perror("Error:");
+		return (1);
+	}
 	str[0] = arg;
 	str[1] = NULL;
 	if (id_pdi == 0)
 	{
 		execve(str[0], str, NULL);
-		sleep(2);
 		exit(1);
 	}
 	id_pdi = wait(&status);

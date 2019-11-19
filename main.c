@@ -40,24 +40,31 @@ void start_shell()
 		free(buffer);
 		exit(1);
 	}
-//	check_arg(buffer);
+	check_arg(buffer);
 //	_execve(buffer);
-	new_Pdi(buffer);
+//	new_Pdi(buffer);
 	free(buffer);
 	start_shell();
 }
 
 void check_arg(char *str)
 {
-	if (strcmp(str, "ls\n") == 0)
-	{
-		_printf("No such file or directory\n");
-	}
-	else if (strcmp(str, "exit\n") == 0)
-	{
-		exit(1);
-	}
+	int i;
+	int j = _strleng(str);
+	char *copy;
+	
+	j -=1;
+	copy = malloc(j * sizeof(char));	
 
+	i = 0;
+	while (str[i] != '\n')
+	{
+		copy[i] = str[i];
+		i++;
+	}
+	str = copy;
+
+	new_Pdi(str);
 }
 
 void split_str(char *s1)
@@ -87,13 +94,11 @@ void new_Pdi(char *arg)
 	str[1] = NULL;
 	if (id_pdi == 0)
 	{
-		_printf("sub process successful\n");
-		_printf(arg);
 		execve(str[0], str, NULL);
 		sleep(2);
 		exit(1);
 	}
 	id_pdi = wait(&status);
 	if ((WIFEXITED(status)) > 0)
-		_printf("End process son. Return to process father\n");
+	{}
 }

@@ -1,5 +1,6 @@
 #ifndef SHELL_H
 #define SHELL_H
+#define ONE_BUFSIZE 1024
 #include <stdlib.h>
 #include <unistd.h>
 #include <stdio.h>

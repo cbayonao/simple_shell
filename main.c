@@ -5,14 +5,14 @@ void split_str (char *s1);
  * main -funtion principal init program simple shell
  * Return: Zero for Succes
  */
-int main(int argc, char *argv[]) 
+int main(int argc, char *argv[])
 {
 	welcome_shell();
 
 	if (argc > 1)
 	{
-	int j = 1;
-	for (int i = argc - 1; i > 0; i--, j++)
+	  int j = 1;
+	  for (int i = argc - 1; i > 0; i--, j++)
 		check_arg(argv[j]);
 	}
 	else
@@ -24,13 +24,12 @@ int main(int argc, char *argv[])
 void start_shell()
 {
 	char *buffer;
-	size_t bufsize = 64;
-	int char_input;
+	int line;
 
 	buffer = create_buffer();
 	_printf("$ ");
-	char_input = getline(&buffer, &bufsize, stdin);
-	if (char_input == EOF)
+	line =_atoi(_getline());
+	if (line == EOF)
 	{
 		free(buffer);
 		exit(1);

@@ -6,7 +6,7 @@
  **/
 void check_arg(char *str)
 {
-	int i;
+	int i = 0;
 	int j = _strleng(str);
 	char *copy;
 
@@ -17,15 +17,12 @@ void check_arg(char *str)
 	{
 		exit(1);
 	}
-
-	i = 0;
 	while (str[i] != '\n')
 	{
 		copy[i] = str[i];
 		i++;
 	}
 	str = copy;
-
 	exec_proc(str);
 	free(copy);
 }

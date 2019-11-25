@@ -9,8 +9,9 @@
 #include <sys/types.h>
 #include <fcntl.h>
 #include <string.h>
-#define 1_BUFSIZE 1024
+#define ONE_BUFSIZE 1024
 
+int _atoi(char *);
 void welcome_shell(void);
 char *create_buffer(void);
 void _printf(char *str);

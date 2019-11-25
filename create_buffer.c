@@ -11,6 +11,7 @@ char *create_buffer(void)
 	if (buffer == NULL)
 		exit(1);
 	*buffer = '\0';
+
 return (buffer);
 }
 

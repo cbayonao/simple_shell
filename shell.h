@@ -11,11 +11,13 @@
 #include <fcntl.h>
 #include <string.h>
 
+int _atoi(char *);
+char *_getline(void);
 void welcome_shell(void);
 char *create_buffer(void);
-void _printf(char *str);
-int _strleng(char *str);
-void check_arg(char *str);
-void exec_proc(char *arg);
+void _printf(char *);
+int _strleng(char *);
+void check_arg(char *);
+void exec_proc(char *);
 //void start_shell(void);
 #endif /* SHELL_H */

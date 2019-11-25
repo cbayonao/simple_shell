@@ -24,12 +24,11 @@ int main(int argc, char *argv[])
 void start_shell()
 {
 	char *buffer;
-	size_t bufsize = 64;
 	int char_input;
 
 	buffer = create_buffer();
 	_printf("$ ");
-	char_input = getline(&buffer, &bufsize, stdin);
+	char_input =_atoi(_getline());
 	if (char_input == EOF)
 	{
 		free(buffer);

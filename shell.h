@@ -20,5 +20,4 @@ void _printf(char *);
 int _strleng(char *);
 void check_arg(char *);
 void exec_proc(char *);
-//void start_shell(void);
 #endif /* SHELL_H */

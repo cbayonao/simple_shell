@@ -41,7 +41,7 @@ README.md  _strleng.c	 create_buffer.c	  handle_sig.c 	 man_1_simple_shell 	 she
 _printf.c 	 check_arg.c	exec_proc.c	 main.c        shell		   split_str.c		welcome.c
 
 
-| COMMANDS       | Options                       |
+| Commands       | Options                       |
 |----------------|-------------------------------|
 |ls              |`-l, -a, -t`                   |
 |cd              |`-, ~, ..`                     |

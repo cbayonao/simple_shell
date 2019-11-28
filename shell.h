@@ -11,7 +11,6 @@
 #include <string.h>
 #define SHELL "/bin/sh"
 int _strcmp(char *, char *);
-void welcome_shell(void);
 char *create_buffer(void);
 void _printf(char *str);
 int _strleng(char *str);

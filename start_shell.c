@@ -14,10 +14,10 @@ void start_shell(void)
 	_printf("$ ");
 
 	char_input = getline(&buffer, &bufsize, stdin);
-	if (char_input == EOF || (_strcmp(buffer, "exit\n") == 0))
+	if (char_input == EOF || (_strcmp(buffer, "exit 98\n") == 0))
 	{
 		free(buffer);
-		exit(1);
+		exit(98);
 	}
 	check_arg(buffer);
 	free(buffer);

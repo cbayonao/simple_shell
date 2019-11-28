@@ -9,7 +9,7 @@
 #include <sys/types.h>
 #include <fcntl.h>
 #include <string.h>
-
+#define SHELL "/bin/sh"
 int _strcmp(char *, char *);
 void welcome_shell(void);
 char *create_buffer(void);

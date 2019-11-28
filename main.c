@@ -20,7 +20,6 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		welcome_shell();
 		start_shell();
 	}
 

@@ -7,8 +7,7 @@ int _strleng(char *str)
 {
 	int i;
 
-	i = 0;
-	for (; str[i] != '\0'; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{}
 return (i);
 }

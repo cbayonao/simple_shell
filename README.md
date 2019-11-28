@@ -24,7 +24,7 @@ gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
 
 execute in this form ./shell 
 
-use commands like ls -l for list directories for example:
+Use commands like ls -l for list directories for example:
 ******************************************
 ******************************************
 
@@ -36,8 +36,9 @@ use commands like ls -l for list directories for example:
 ******************************************
 
 $ ls
-README.md  _strleng.c	create_buffer.c  handle_sig.c  man_1_simple_shell  shell.h	start_shell.c
-_printf.c  check_arg.c	exec_proc.c	 main.c        shell		   split_str.c	welcome.c
+
+README.md  _strleng.c	 create_buffer.c	  handle_sig.c 	 man_1_simple_shell 	 shell.h	start_shell.c
+_printf.c 	 check_arg.c	exec_proc.c	 main.c        shell		   split_str.c		welcome.c
 
 
 | COMMANDS       | Options                       |

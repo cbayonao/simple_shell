@@ -10,20 +10,24 @@ void exec_proc(char *arg)
 	int status;
 	pid_t id_pdi;
 
-	id_pdi = fork();
-	if (id_pdi == -1)
+	if (arg != NULL)
 	{
-		perror("Error:");
-		exit(1);
+		id_pdi = fork();
+		if (id_pdi == -1)
+		{
+			perror("Error");
+			exit(1);
+		}
+
+		str[0] = arg;
+		str[1] = NULL;
+		if (id_pdi == 0)
+		{
+			execve(str[0], str, NULL);
+			exit(1);
+		}
 	}
-	str[0] = arg;
-	str[1] = NULL;
-	if (id_pdi == 0)
-	{
-		execve(str[0], str, NULL);
-		exit(1);
-	}
-	id_pdi = wait(&status);
-	if ((WIFEXITED(status)) > 0)
-	{}
+		id_pdi = wait(&status);
+		if ((WIFEXITED(status)) > 0)
+		{}
 }

@@ -18,11 +18,9 @@ void check_arg(char *str)
 		exit(1);
 	}
 
-	i = 0;
-	while (str[i] != '\n')
+	for (i = 0; str[i] != '\n'; i++)
 	{
 		copy[i] = str[i];
-		i++;
 	}
 	str = copy;
 

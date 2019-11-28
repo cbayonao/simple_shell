@@ -10,6 +10,7 @@
 #include <fcntl.h>
 #include <string.h>
 
+int _strcmp(char *, char *);
 void welcome_shell(void);
 char *create_buffer(void);
 void _printf(char *str);

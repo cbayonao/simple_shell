@@ -18,5 +18,5 @@ void check_arg(char *str);
 void exec_proc(char *arg);
 char split_str(char *s1);
 void handle_sigint(int sig);
-//void start_shell(void);
+void start_shell(void);
 #endif /* SHELL_H */

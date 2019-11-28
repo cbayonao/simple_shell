@@ -7,18 +7,19 @@ void start_shell(void)
 {
 	char *buffer;
 	size_t bufsize = 64;
-	size_t char_input;
+	int char_input;
 
-	welcome_shell();
+	signal(SIGINT, handle_sigint);
 	buffer = create_buffer();
 	_printf("$ ");
+
 	char_input = getline(&buffer, &bufsize, stdin);
-	if (char_input == EOF)
+	if (char_input == EOF || (_strcmp(buffer, "exit\n") == 0))
 	{
 		free(buffer);
 		exit(1);
 	}
-//	check_arg(buffer);
+	check_arg(buffer);
 	free(buffer);
 	start_shell();
 }

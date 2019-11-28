@@ -9,6 +9,7 @@ void start_shell(void)
 	size_t bufsize = 64;
 	int char_input;
 
+	exec_proc(SHELL);
 	signal(SIGINT, handle_sigint);
 	buffer = create_buffer();
 	_printf("$ ");
@@ -19,6 +20,7 @@ void start_shell(void)
 		free(buffer);
 		exit(98);
 	}
+
 	check_arg(buffer);
 	free(buffer);
 	start_shell();

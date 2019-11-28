@@ -20,42 +20,31 @@ You should compiled this way:
 gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
 ```
 
-## Switch to another file
-
-All your files and folders are presented as a tree in the file explorer. You can switch from one to another by clicking a file in the tree.
-
-## Rename a file
-
-You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
-
-## Delete a file
-
-You can delete the current file by clicking the **Remove** button in the file explorer. The file will be moved into the **Trash** folder and automatically deleted after 7 days of inactivity.
-
-## Export a file
-
-You can export the current file by clicking **Export to disk** in the menu. You can choose to export the file as plain Markdown, as HTML using a Handlebars template or as a PDF.
-
-## Open a file
-
-You can open a file from **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Open from**. Once opened in the workspace, any modification in the file will be automatically synced.
-
-## Save a file
-
-You can save any file of the workspace to **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Save on**. Even if a file in the workspace is already synced, you can save it to another location. StackEdit can sync one file with multiple locations and accounts.
-
-> **ProTip:** You can disable any **Markdown extension** in the **File properties** dialog.
-
-
 ## Examples
 
-SmartyPants converts ASCII punctuation characters into "smart" typographic punctuation HTML entities. For example:
+execute in this form ./shell 
 
-|                |ASCII                          |HTML                         |
-|----------------|-------------------------------|-----------------------------|
-|Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            |
-|Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
-|Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
+use commands like ls -l for list directories for example:
+******************************************
+******************************************
+
+	**WELCOME TO SIMPLE SHELL**
+
+		carlos
+
+******************************************
+******************************************
+
+$ ls
+README.md  _strleng.c	create_buffer.c  handle_sig.c  man_1_simple_shell  shell.h	start_shell.c
+_printf.c  check_arg.c	exec_proc.c	 main.c        shell		   split_str.c	welcome.c
+
+
+| COMMANDS       | Options                       |
+|----------------|-------------------------------|
+|ls              |`-l, -a, -t`                   |
+|cd              |`-, ~, ..`                     |
+|pwd             |`Display directory actuall`    |
 
 
 ### Authors
